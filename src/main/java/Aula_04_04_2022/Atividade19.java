@@ -15,14 +15,15 @@ public class Atividade19 {
     
     public static String retornoCompra(double gramas) {
         String retornoCompra = "";
+        double calc;
         if (gramas > 1000) {
-            double calc = gramas * 3;
+            calc = gramas * 3;
             retornoCompra = gramas+"g * R$3.00 = "+calc;
         } else {
-            double calc = gramas * 3.50;
+            calc = gramas * 3.50;
             retornoCompra = gramas+"g * R$3.50 = "+calc;
         }
-        
+        System.out.format("%.2f", calc);
         return retornoCompra;
     }
 }
